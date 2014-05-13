@@ -11,6 +11,7 @@ namespace:db do
 
     #create the contacts
     Contacts.populate num_contacts do |con|
+      Faker::Config.locale = 'en-us'
       fName = Faker::Name.first_name
       lName = Faker::Name.last_name
       con.FirstName = fName
@@ -20,8 +21,8 @@ namespace:db do
       con.MailingState = Faker::Address.state
       con.MailingPostalCode = Faker::Address.postcode
       con.MailingCountry = 'United States'
-      con.Phone = Faker::Number.number(9)
-      con.Fax = Faker::Number.number(9)
+      con.Phone = Faker::Number.number(10)
+      con.Fax = Faker::Number.number(10)
       con.Email = fName + '.' + lName + '@asu.testmail'
       con.Birthdate = 25.years.ago.strftime("%Y-%d-%m")...18.years.ago.strftime("%Y-%d-%m")
       con.Gender = gender
