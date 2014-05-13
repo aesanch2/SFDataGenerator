@@ -24,7 +24,7 @@ namespace:db do
       con.Phone = Faker::Number.number(10)
       con.Fax = Faker::Number.number(10)
       con.Email = fName + '.' + lName + '@asu.testmail'
-      con.Birthdate = 25.years.ago.strftime("%F")...18.years.ago.strftime("%F")
+      con.Birthdate = 25.years.ago.strptime("%F")...18.years.ago.strptime("%F")
       con.Gender = gender
       con.GPAUnder = rand(1.00...4.00)
       con.GPAJrSr = rand(1.00...4.00)
