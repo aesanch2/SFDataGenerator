@@ -10,7 +10,7 @@ namespace:db do
     gender = ['Male', 'Female', 'Unknown']
 
     #create the contacts
-    Contact.populate num_contacts do |con|
+    Contacts.populate num_contacts do |con|
       fName = Faker::Name.first_name
       lName = Faker::Name.last_name
       con.FirstName = fName
