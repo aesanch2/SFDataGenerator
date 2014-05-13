@@ -21,6 +21,7 @@ class CreateContacts < ActiveRecord::Migration
       t.integer :HomePhone
       t.integer :OtherPhone
       t.string :Email
+      t.string :LeadSource
       t.date :Birthdate
       t.string :Personal_Email__c
       t.string :Gender
