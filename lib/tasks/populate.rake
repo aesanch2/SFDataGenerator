@@ -24,9 +24,10 @@ namespace:db do
       fName = Faker::Name.first_name
       lName = Faker::Name.last_name
       email = Faker::Internet.safe_email(fName)
+      title = salutation.at(rand(0..4))
       con.FirstName = fName
       con.LastName = lName
-      con.Salutation = salutation
+      con.Salutation = title
       con.OtherStreet = Faker::Address.street_address
       con.OtherCity = Faker::Address.city
       con.OtherState = Faker::Address.state
@@ -47,7 +48,7 @@ namespace:db do
       con.Birthdate = 25.years.ago...18.years.ago
       con.Personal_Email__c = email
       #Gender logic
-      case salutation
+      case title
       when 'Mr.'
         con.Gender = 'Male'
       when 'Ms.'
@@ -58,12 +59,12 @@ namespace:db do
         con.Gender = gender
       end
       con.ASU_Gmail__c = (fName + "@asu.gmail")
-      resident = rand(1..10)
-      if (resident%2 == 0)
-        con.Arizona_Resident__c = true
-      else
-        con.Arizona_Resident__c = false
-      end
+      #resident = rand(1..10)
+      #if (resident%2 == 0)
+      #  con.Arizona_Resident__c = true
+      #else
+      #  con.Arizona_Resident__c = false
+      #end
       con.Undergraduate_GPA__c = rand(1.00...4.00)
       con.Jr_Sr_GPA__c = rand(1.00...4.00)
       #military logic
@@ -78,9 +79,9 @@ namespace:db do
         con.Military_Branch__c = milBranch
       end
       con.Email_Status__c = emailStatus
-      case salutation
+      case title
       when 'Mrs.'
-        con.Martial_Status__c = 'Married'
+        con.Marital_Status__c = 'Married'
       when 'Ms.'
         con.Marital_Status__c = 'Single'
       else
@@ -88,12 +89,12 @@ namespace:db do
       end
       con.Ethnicity = ethnicity
       #logic to randomize FERPA
-      ferpa = rand(1..10)
-      if (ferpa%2 == 0)
-        con.FERPA__c = true
-      else
-        con.FERPA__c = false
-      end
+      #ferpa = rand(1..10)
+      #if (ferpa%2 == 0)
+      #  con.FERPA__c = true
+      #else
+      #  con.FERPA__c = false
+      #end
       con.Undergraduate_Major__c = major
       #logic to randomize Graduate status?
       graduate = rand(1..10)
@@ -103,7 +104,7 @@ namespace:db do
       con.Contact_Preference__c = contactPref
       con.Student_Number__c = Faker::Number.number(10)
       con.ASURite_ID__c = '120' + Faker::Number.number(7)
-      con.Deceased__c = false
+      #con.Deceased__c = false
       con.ASU_Email__c = fName + '.' + lName + '@asuFake.edu'
     end
 
