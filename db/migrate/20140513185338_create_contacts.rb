@@ -43,7 +43,6 @@ class CreateContacts < ActiveRecord::Migration
       t.string :ASURite_ID__c
       t.boolean :Deceased__c
       t.string :ASU_Email__c
-      t.string :Country_of_Citizenship__c
     end
   end
 end

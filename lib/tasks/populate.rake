@@ -15,6 +15,8 @@ namespace:db do
     emailStatus = ['Role', 'Temp', 'Valid']
     maritalStatus = ['Single', 'Married', 'Divorced', 'Unknown']
     ethnicity = ['Am. Indian Alaska Native', 'Asian', 'Black African-American', 'Hispanic', 'Pacific Islander', 'White']
+    major = ['Computer Science', 'Biology', 'Business', 'Mechanical Engineering', 'Political Science', 'Mathematics', 'Economics', 'Psychology']
+    contactPref = ['Home Phone', 'Local Phone', 'Mobile Phone', 'Email']
 
     #create the contacts
     Contacts.populate num_contacts do |con|
@@ -60,10 +62,10 @@ namespace:db do
       con.Undergraduate_GPA__c = rand(1.00...4.00)
       con.Jr_Sr_GPA__c = rand(1.00...4.00)
       #military logic
-      a = rand(10..20)
-      b = rand(10..20)
+      mil1 = rand(10..20)
+      mil2 = rand(10..20)
       milMember = false
-      if (a == b)
+      if (mil1 == mil2)
         con.Military_Status__c = milStatus
         milMember = true
       end
@@ -80,7 +82,24 @@ namespace:db do
         con.Marital_Status__c = maritalStatus
       end
       con.Ethnicity = ethnicity
-      con.FERPA__c = true
+      #logic to randomize FERPA
+      ferpa = rand(1..10)
+      if (ferpa%2 == 0)
+        con.FERPA__c = true
+      else
+        con.FERPA__c = false
+      end
+      con.Undergraduate_Major__c = major
+      #logic to randomize Graduate status?
+      graduate = rand(1..10)
+      if(graduate%2 == 0)
+        con.Graduate_GPA__c = rand(3.00..4.00)
+      end
+      con.Contact_Preference__c = contactPref
+      con.Student_Number__c = Faker::Number.number(10)
+      con.ASURite_ID__c = '120' + Faker::Number.number(7)
+      con.Deceased__c = false
+      con.ASU_Email__c = fName + '.' + lName + '@asuFake.edu'
     end
 
     print "#{num_contacts} created.\n"
