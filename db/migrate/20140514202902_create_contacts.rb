@@ -1,10 +1,11 @@
-class CreateCompleteContacts < ActiveRecord::Migration
+class CreateContacts < ActiveRecord::Migration
   def change
-    create_table :complete_contacts do |t|
+    create_table :contacts do |t|
       t.string :sfdc_id
       t.string :FirstName
       t.string :LastName
       t.string :Salutation
+      t.string :RoverStatus
       t.string :OtherStreet
       t.string :OtherCity
       t.string :OtherState

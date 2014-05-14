@@ -11,13 +11,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140514163157) do
+ActiveRecord::Schema.define(version: 20140514202902) do
 
-  create_table "complete_contacts", force: true do |t|
+  create_table "contacts", force: true do |t|
     t.string  "sfdc_id"
     t.string  "FirstName"
     t.string  "LastName"
     t.string  "Salutation"
+    t.string  "RoverStatus"
     t.string  "OtherStreet"
     t.string  "OtherCity"
     t.string  "OtherState"
@@ -56,42 +57,6 @@ ActiveRecord::Schema.define(version: 20140514163157) do
     t.string  "ASURite_ID__c"
     t.boolean "Deceased__c"
     t.string  "ASU_Email__c"
-  end
-
-  create_table "contact", force: true do |t|
-    t.string  "sfdc_id"
-    t.string  "FirstName"
-    t.string  "LastName"
-    t.string  "MailingStreet"
-    t.string  "MailingCity"
-    t.string  "MailingState"
-    t.string  "MailingPostalCode"
-    t.string  "MailingCountry"
-    t.integer "Phone"
-    t.integer "Fax"
-    t.string  "Email"
-    t.date    "Birthdate"
-    t.string  "Gender"
-    t.decimal "GPAUnder",          precision: 3, scale: 2
-    t.decimal "GPAJrSr",           precision: 3, scale: 2
-  end
-
-  create_table "contacts", force: true do |t|
-    t.string  "sfdc_id"
-    t.string  "FirstName"
-    t.string  "LastName"
-    t.string  "MailingStreet"
-    t.string  "MailingCity"
-    t.string  "MailingState"
-    t.string  "MailingPostalCode"
-    t.string  "MailingCountry"
-    t.integer "Phone"
-    t.integer "Fax"
-    t.string  "Email"
-    t.date    "Birthdate"
-    t.string  "Gender"
-    t.decimal "GPAUnder",          precision: 3, scale: 2
-    t.decimal "GPAJrSr",           precision: 3, scale: 2
   end
 
 end
