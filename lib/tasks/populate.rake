@@ -19,7 +19,7 @@ namespace:db do
     contactPref = ['Home Phone', 'Local Phone', 'Mobile Phone', 'Email']
 
     #create the contacts
-    CompleteContacts.populate num_contacts do |con|
+    Contacts.populate num_contacts do |con|
       Faker::Config.locale = 'en-us'
       fName = Faker::Name.first_name
       lName = Faker::Name.last_name
@@ -28,6 +28,7 @@ namespace:db do
       con.FirstName = fName
       con.LastName = lName
       con.Salutation = title
+      con.RoverStatus = 'No'
       con.OtherStreet = Faker::Address.street_address
       con.OtherCity = Faker::Address.city
       con.OtherState = Faker::Address.state

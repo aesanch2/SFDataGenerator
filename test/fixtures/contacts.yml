@@ -1,9 +1,7 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  sfdc_id: MyString
-  name: MyString
+  sfdcid: MyString
 
 two:
-  sfdc_id: MyString
-  name: MyString
+  sfdcid: MyString
