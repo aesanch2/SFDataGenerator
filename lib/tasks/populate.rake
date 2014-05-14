@@ -19,7 +19,7 @@ namespace:db do
     contactPref = ['Home Phone', 'Local Phone', 'Mobile Phone', 'Email']
 
     #create the contacts
-    Contacts.populate num_contacts do |con|
+    CompleteContacts.populate num_contacts do |con|
       Faker::Config.locale = 'en-us'
       fName = Faker::Name.first_name
       lName = Faker::Name.last_name
@@ -58,7 +58,12 @@ namespace:db do
         con.Gender = gender
       end
       con.ASU_Gmail__c = (fName + "@asu.gmail")
-      con.Arizona_Resident__c = master
+      resident = rand(1..10)
+      if (resident%2 == 0)
+        con.Arizona_Resident__c = true
+      else
+        con.Arizona_Resident__c = false
+      end
       con.Undergraduate_GPA__c = rand(1.00...4.00)
       con.Jr_Sr_GPA__c = rand(1.00...4.00)
       #military logic
