@@ -6,6 +6,7 @@ class CreateLeads < ActiveRecord::Migration
       t.string :FirstName
       t.string :Salutation #picklist
       t.string :Title
+      t.string :Company
       t.string :Street
       t.string :City
       t.string :State

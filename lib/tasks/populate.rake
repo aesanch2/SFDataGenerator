@@ -143,6 +143,7 @@ namespace:db do
       ld.LastName = lName
       ld.FirstName = fName
       ld.Salutation = title
+      ld.Company = Faker::Company.name
       ld.Street = Faker::Address.street_address
       ld.City = Faker::Address.city
       ld.State = Faker::Address.state
@@ -204,6 +205,10 @@ namespace:db do
     #prompt for Account Ids
     print "Enter some validated Account Ids (separated by a space): "
     accounts = $stdin.gets.split(" ").map { |s| s }
+    print "Enter some validated Contact Ids (separated by a space): "
+    contacts = $stdin.gets.split(" ").map { |s| s }
+    print "Enter some validated Lead Ids (separated by a space): "
+    leads = $stdin.gets.split(" ").map { |s| s }
     print "How many cases do you want? "
     num_cases = $stdin.gets.to_i
 
@@ -214,9 +219,19 @@ namespace:db do
     origin = ['Email', 'Phone', 'Web']
     priority = ['High', 'Medium', 'Low']
 
+    index = rand(0..accounts.length)
+    account = accounts(index)
+    contact = contacts(index)
+
     #Create the cases
     Cases.populate num_cases do |ca|
-      ca.AccountId = accounts
+      leadOnly = rand(1..10)
+      if(leadOnly%2 == 0)
+        ca.Lead__c = leads
+      else
+        ca.AccountId = account
+        ca.ContactId = contact
+      end
       ca.Type = types
       ca.Status = status
       ca.Reason = reason
