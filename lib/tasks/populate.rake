@@ -219,12 +219,11 @@ namespace:db do
     origin = ['Email', 'Phone', 'Web']
     priority = ['High', 'Medium', 'Low']
 
-    index = rand(0..accounts.length)
-    account = accounts(index)
-    contact = contacts(index)
-
     #Create the cases
     Cases.populate num_cases do |ca|
+      index = rand(0..accounts.length-1)
+      account = accounts.fetch(index)
+      contact = contacts.fetch(index)
       leadOnly = rand(1..10)
       if(leadOnly%2 == 0)
         ca.Lead__c = leads
