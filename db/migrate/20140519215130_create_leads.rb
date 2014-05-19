@@ -4,9 +4,8 @@ class CreateLeads < ActiveRecord::Migration
       t.string :sfdc_id
       t.string :LastName
       t.string :FirstName
-      t.string :Salutation
+      t.string :Salutation #picklist
       t.string :Title
-      t.string :Company
       t.string :Street
       t.string :City
       t.string :State
@@ -26,14 +25,14 @@ class CreateLeads < ActiveRecord::Migration
       t.string :IsUnreadByOwner #bool
       t.string :DoNotCall #bool
       t.string :HasOptedOutOfFax
-      t.string :Gender
+      t.string :Gender #picklist
       t.date :Date_of_Birth__c
       t.string :Recruiting_Email__c
       t.string :Degree_Type__c #picklist
       t.string :Academic_Plan_list__c
       t.string :Research_Experience__c #picklist
       t.string :Contact_Preference__c #picklist
-      t.string :ASU_Student__c #picklist
+      t.string :ASU_Student__c #bool
       t.string :Course_Load__c #picklist
       t.string :Secondary_Email__c
       t.decimal :Undergraduate_GPA__c
