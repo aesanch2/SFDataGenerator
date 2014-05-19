@@ -150,7 +150,7 @@ namespace:db do
       ld.Country = 'United States'
       ld.Phone = Faker::PhoneNumber.phone_number
       ld.MobilePhone = Faker::PhoneNumber.phone_number
-      ld.Fax = Faker::PHoneNumber.phone_number
+      ld.Fax = Faker::PhoneNumber.phone_number
       ld.Email = email
       ld.LeadSource = leadsources
       ld.Status = status
@@ -172,7 +172,7 @@ namespace:db do
         ld.Gender = gender
       end
       ld.Date_of_Birth__c = 25.years.ago...18.years.ago
-      ld.Recruting_Email__c = email
+      ld.Recruiting_Email__c = email
       ld.Degree_Type__c = degreeType
       #ld.Academic_Plan_List__c =
       ld.Research_Experience__c = research
