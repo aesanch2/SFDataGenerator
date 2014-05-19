@@ -104,4 +104,33 @@ namespace:db do
 
     print "#{num_contacts} created.\n"
   end
+
+
+    desc "Create some fake Cases using given Account Ids"
+    task :fake_cases => :environment do
+      #prompt for Account Ids
+      print "Enter some validated Account Ids (separated by a space): "
+      accounts = $stdin.gets.split(" ").map { |s| s }
+      print "How many cases do you want to create? "
+      num_cases = $stdin.gets.to_i
+
+      types = ['Problem', 'Feature Request', 'Question']
+      status = ['On Hold', 'Escalated', 'Closed', 'New']
+      reason = ['User didn\'t attend training', 'Complex functionality', 'Existing problem', 'Instructions not clear', 'New problem']
+      origin = ['Email', 'Phone', 'Web']
+      priority = ['High', 'Medium', 'Low']
+
+      #Create the cases
+      Cases.populate num_cases do |ca|
+        ca.CaseNumber = Faker::Number.number(30)
+        ca.AccountId = accounts
+        ca.Type = types
+        ca.Status = status
+        ca.Reason = reason
+        ca.Origin = origin
+        ca.Subject = Faker::Company.bs
+        ca.Priority = priority
+        ca.Description = Faker::Lorem.paragraph(3)
+      end
+    end
 end
