@@ -17,6 +17,7 @@ namespace:db do
     ethnicity = ['Am. Indian Alaska Native', 'Asian', 'Black African-American', 'Hispanic', 'Pacific Islander', 'White']
     major = ['Computer Science', 'Biology', 'Business', 'Mechanical Engineering', 'Political Science', 'Mathematics', 'Economics', 'Psychology']
     contactPref = ['Home Phone', 'Local Phone', 'Mobile Phone', 'Email']
+    bool = ['true', 'false']
 
     #create the contacts
     Contacts.populate num_contacts do |con|
@@ -47,6 +48,9 @@ namespace:db do
       con.Email = email
       con.LeadSource = leadsources
       con.Birthdate = 25.years.ago...18.years.ago
+      con.HasOptedOutOfEmail = bool
+      con.HasOptedOutOfFax = bool
+      con.DoNotCall = bool
       con.Personal_Email__c = email
       #Gender logic
       case title
@@ -60,12 +64,7 @@ namespace:db do
         con.Gender = gender
       end
       con.ASU_Gmail__c = (fName + "@asu.gmail")
-      #resident = rand(1..10)
-      #if (resident%2 == 0)
-      #  con.Arizona_Resident__c = true
-      #else
-      #  con.Arizona_Resident__c = false
-      #end
+      con.Arizona_Resident__c = bool
       con.Undergraduate_GPA__c = rand(1.00...4.00)
       con.Jr_Sr_GPA__c = rand(1.00...4.00)
       #military logic
@@ -89,15 +88,9 @@ namespace:db do
         con.Marital_Status__c = maritalStatus
       end
       con.Ethnicity = ethnicity
-      #logic to randomize FERPA
-      #ferpa = rand(1..10)
-      #if (ferpa%2 == 0)
-      #  con.FERPA__c = true
-      #else
-      #  con.FERPA__c = false
-      #end
+      con.FERPA__c = bool
       con.Undergraduate_Major__c = major
-      #logic to randomize Graduate status?
+      #logic to randomize Graduate status
       graduate = rand(1..10)
       if(graduate%2 == 0)
         con.Graduate_GPA__c = rand(3.00..4.00)
@@ -105,7 +98,7 @@ namespace:db do
       con.Contact_Preference__c = contactPref
       con.Student_Number__c = Faker::Number.number(10)
       con.ASURite_ID__c = '120' + Faker::Number.number(7)
-      #con.Deceased__c = false
+      con.Deceased__c = 'false'
       con.ASU_Email__c = fName + '.' + lName + '@asuFake.edu'
     end
 
