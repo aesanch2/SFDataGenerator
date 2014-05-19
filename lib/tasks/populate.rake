@@ -128,9 +128,9 @@ namespace:db do
         ca.Status = status
         ca.Reason = reason
         ca.Origin = origin
-        ca.Subject = Faker::Company.bs
+        ca.Subject = Faker::Company.catch_phrase
         ca.Priority = priority
-        ca.Description = Faker::Lorem.paragraph(3)
+        ca.Description = Faker::Company.bs
       end
     end
 end

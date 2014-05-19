@@ -11,7 +11,22 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140514202902) do
+ActiveRecord::Schema.define(version: 20140519192438) do
+
+  create_table "cases", force: true do |t|
+    t.string "sfdc_id"
+    t.string "CaseNumber"
+    t.string "ContactId"
+    t.string "AccountId"
+    t.string "Type"
+    t.string "Status"
+    t.string "Reason"
+    t.string "Origin"
+    t.string "Subject"
+    t.string "Priority"
+    t.string "Description"
+    t.string "Lead__c"
+  end
 
   create_table "contacts", force: true do |t|
     t.string  "sfdc_id"
@@ -37,10 +52,13 @@ ActiveRecord::Schema.define(version: 20140514202902) do
     t.string  "Email"
     t.string  "LeadSource"
     t.date    "Birthdate"
+    t.string  "HasOptedOutOfEmail"
+    t.string  "HasOptedOutOfFax"
+    t.string  "DoNotCall"
     t.string  "Personal_Email__c"
     t.string  "Gender"
     t.string  "ASU_Gmail__c"
-    t.boolean "Arizona_Resident__c"
+    t.string  "Arizona_Resident__c"
     t.string  "Visa_Type__c"
     t.decimal "Undergraduate_GPA__c",   precision: 3, scale: 2
     t.decimal "Jr_Sr_GPA__c",           precision: 3, scale: 2
@@ -49,14 +67,15 @@ ActiveRecord::Schema.define(version: 20140514202902) do
     t.string  "Email_Status__c"
     t.string  "Marital_Status__c"
     t.string  "Ethnicity"
-    t.boolean "FERPA__c"
+    t.string  "FERPA__c"
     t.string  "Undergraduate_Major__c"
     t.decimal "Graduate_GPA__c",        precision: 3, scale: 2
     t.string  "Contact_Preference__c"
     t.string  "Student_Number__c"
     t.string  "ASURite_ID__c"
-    t.boolean "Deceased__c"
+    t.string  "Deceased__c"
     t.string  "ASU_Email__c"
+    t.string  "Test_Record__c"
   end
 
 end
