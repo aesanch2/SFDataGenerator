@@ -1,28 +1,33 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+SFDataGenerator
+Anthony Sanchez
+aesanch2@asu.edu
 
-Things you may want to cover:
+This tool creates dummy data for contacts, leads, and cases objects in the
+ASU Salesforce Enterprise. 
 
-* Ruby version
+* Ruby version - 2.1.1
 
-* System dependencies
+* System dependencies - RVM, sqlite3, Rails 4.1.1
 
-* Configuration
+* Configuration - to create new tables in the database run:
 
-* Database creation
+rails generate model new [table] [fields]:[type] [options]
 
-* Database initialization
+* Database creation - rake db:create
 
-* How to run the test suite
+* Database initialization - rake db:migrate
 
-* Services (job queues, cache servers, search engines, etc.)
+* Populator - populator.rake is used to populate the db. Three functions exist:
 
-* Deployment instructions
+rake db:fake_contacts: Enter the number of contacts you want to create. They
+will be stored in the "contacts" table in  <tt>db/development.sqlite3</tt>.
 
-* ...
+rake db:fake_leads: Enter the number of leads you want to create. They will be
+stored in the "leads" table in <tt>db/development.sqlite3</tt>.
 
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+rake db:fake_cases: You need to retrieve the salesforce ids of 25 contacts,
+25 accounts, and 25 leads. These need to be in a single line separated by a
+space. Then enter the number of cases you wish to create. They will be stored
+in the "cases" table in <tt>db/development.sqlite3<tt>.
