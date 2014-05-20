@@ -1,0 +1,101 @@
+id,sfdc_id,CaseNumber,ContactId,AccountId,Type,Status,Reason,Origin,Subject,Priority,Description,Lead__c
+1,,,,,Problem,Closed,"New problem",Phone,"Ameliorated full-range local area network",Medium,"harness vertical action-items",00Qm0000001B1N7EAK
+2,,,,,Problem,New,"Instructions not clear",Web,"User-friendly user-facing policy",Medium,"streamline frictionless eyeballs",00Qm0000001B1NDEA0
+3,,,003m0000003A5X9AAK,001m0000004BhoWAAS,Problem,Closed,"Complex functionality",Phone,"Implemented demand-driven service-desk",Medium,"strategize customized functionalities",
+4,,,003m0000003A5XdAAK,001m0000004Bhp0AAC,Problem,New,"Instructions not clear",Phone,"Decentralized system-worthy methodology",High,"maximize global technologies",
+5,,,003m0000003A5XlAAK,001m0000004Bhp8AAC,Question,Closed,"Complex functionality",Email,"Triple-buffered uniform project",Medium,"synergize customized action-items",
+6,,,,,Problem,Escalated,"New problem",Web,"Extended leading edge process improvement",High,"synergize dot-com infomediaries",00Qm0000001B1NBEA0
+7,,,003m0000003A5XDAA0,001m0000004BhoaAAC,"Feature Request",Escalated,"Instructions not clear",Phone,"Customizable clear-thinking contingency",Medium,"repurpose best-of-breed action-items",
+8,,,003m0000003A5XAAA0,001m0000004BhoXAAS,Problem,New,"Existing problem",Email,"Reduced contextually-based forecast",Medium,"iterate bricks-and-clicks channels",
+9,,,003m0000003A5XfAAK,001m0000004Bhp2AAC,Question,Closed,"User didn't attend training",Email,"Triple-buffered grid-enabled challenge",Medium,"target one-to-one convergence",
+10,,,003m0000003A5XFAA0,001m0000004BhocAAC,"Feature Request","On Hold","Complex functionality",Web,"Mandatory client-driven knowledge user",Medium,"integrate plug-and-play e-markets",
+11,,,,,Question,"On Hold","New problem",Phone,"Down-sized impactful model",Medium,"benchmark end-to-end web-readiness",00Qm0000001B1NDEA0
+12,,,,,"Feature Request",Closed,"Complex functionality",Web,"Re-contextualized context-sensitive local area network",Medium,"visualize impactful e-business",00Qm0000001B1NLEA0
+13,,,,,"Feature Request",New,"Complex functionality",Email,"Compatible didactic capability",High,"maximize turn-key infomediaries",00Qm0000001B1NcEAK
+14,,,003m0000003A5XsAAK,001m0000004BhpFAAS,Question,Escalated,"Existing problem",Web,"Total cohesive framework",Low,"innovate sexy architectures",
+15,,,,,"Feature Request",New,"Existing problem",Email,"Expanded exuding interface",Medium,"optimize cross-media portals",00Qm0000001B1NiEAK
+16,,,003m0000003A5XZAA0,001m0000004BhowAAC,Question,Escalated,"Instructions not clear",Email,"Customizable regional portal",Low,"drive intuitive methodologies",
+17,,,003m0000003A5XbAAK,001m0000004BhoyAAC,"Feature Request",Escalated,"User didn't attend training",Email,"Universal incremental focus group",High,"extend proactive portals",
+18,,,,,"Feature Request",Closed,"User didn't attend training",Web,"Function-based 24/7 hierarchy",Low,"embrace bleeding-edge infrastructures",00Qm0000001B1NNEA0
+19,,,003m0000003A5XtAAK,001m0000004BhpGAAS,Problem,"On Hold","Complex functionality",Phone,"Self-enabling interactive archive",High,"drive intuitive eyeballs",
+20,,,003m0000003A5XQAA0,001m0000004BhonAAC,Question,New,"User didn't attend training",Email,"Distributed upward-trending database",Medium,"empower vertical experiences",
+21,,,003m0000003A5XJAA0,001m0000004BhogAAC,Problem,New,"Instructions not clear",Email,"Synchronised non-volatile support",Low,"incentivize one-to-one paradigms",
+22,,,,,Question,New,"User didn't attend training",Web,"Universal web-enabled neural-net",Medium,"integrate killer e-markets",00Qm0000001B1NAEA0
+23,,,003m0000003A5XNAA0,001m0000004BhokAAC,"Feature Request",New,"Complex functionality",Phone,"Versatile system-worthy framework",Low,"incentivize 24/7 e-commerce",
+24,,,003m0000003A5XsAAK,001m0000004BhpFAAS,"Feature Request","On Hold","Complex functionality",Email,"Configurable national matrices",Low,"iterate strategic supply-chains",
+25,,,003m0000003A5XoAAK,001m0000004BhpBAAS,"Feature Request",Closed,"User didn't attend training",Email,"Programmable grid-enabled architecture",Medium,"brand leading-edge relationships",
+26,,,,,"Feature Request","On Hold","New problem",Email,"Open-architected global toolset",Medium,"scale revolutionary e-commerce",00Qm0000001B1NkEAK
+27,,,,,"Feature Request",Closed,"Existing problem",Phone,"Phased local focus group",Medium,"e-enable killer systems",00Qm0000001B1NEEA0
+28,,,,,Problem,New,"Complex functionality",Phone,"User-friendly zero tolerance superstructure",Low,"reinvent global solutions",00Qm0000001B1N8EAK
+29,,,003m0000003A5XbAAK,001m0000004BhoyAAC,Problem,New,"Instructions not clear",Web,"Persistent disintermediate alliance",Medium,"visualize next-generation platforms",
+30,,,,,Problem,"On Hold","Complex functionality",Email,"Organized systematic data-warehouse",Medium,"brand value-added methodologies",00Qm0000001B1N0EAK
+31,,,003m0000003A5XSAA0,001m0000004BhopAAC,"Feature Request","On Hold","New problem",Email,"Networked 3rd generation initiative",High,"cultivate ubiquitous vortals",
+32,,,003m0000003A5X5AAK,001m0000004BhnjAAC,"Feature Request",New,"User didn't attend training",Email,"Vision-oriented cohesive matrices",High,"empower integrated action-items",
+33,,,003m0000003A5XVAA0,001m0000004BhosAAC,Problem,Closed,"Existing problem",Web,"Reduced context-sensitive portal",Low,"harness 24/365 e-services",
+34,,,,,Problem,"On Hold","Existing problem",Phone,"Business-focused bottom-line artificial intelligence",High,"redefine integrated methodologies",00Qm0000001B1NBEA0
+35,,,003m0000003A5XRAA0,001m0000004BhooAAC,Question,Closed,"User didn't attend training",Email,"Function-based asynchronous extranet",Medium,"engineer sexy experiences",
+36,,,,,Question,Closed,"Instructions not clear",Email,"Extended methodical ability",High,"implement cross-platform niches",00Qm0000001B1MwEAK
+37,,,,,"Feature Request","On Hold","Instructions not clear",Email,"Vision-oriented local functionalities",High,"target strategic platforms",00Qm0000001B1N7EAK
+38,,,,,"Feature Request",Escalated,"Instructions not clear",Web,"Intuitive eco-centric interface",Low,"leverage scalable technologies",00Qm0000001B1NcEAK
+39,,,003m0000003A5XQAA0,001m0000004BhonAAC,Problem,Closed,"New problem",Email,"Visionary leading edge application",Low,"whiteboard mission-critical bandwidth",
+40,,,003m0000003A5XsAAK,001m0000004BhpFAAS,"Feature Request",Escalated,"Existing problem",Phone,"Streamlined attitude-oriented model",High,"transform end-to-end markets",
+41,,,003m0000003A5XsAAK,001m0000004BhpFAAS,"Feature Request","On Hold","New problem",Email,"Total uniform knowledge base",Medium,"visualize interactive paradigms",
+42,,,003m0000003A5XrAAK,001m0000004BhpEAAS,Problem,"On Hold","Existing problem",Email,"Public-key demand-driven matrix",Low,"iterate synergistic experiences",
+43,,,003m0000003A5XmAAK,001m0000004Bhp9AAC,Problem,New,"Instructions not clear",Email,"Innovative multi-state functionalities",Low,"disintermediate seamless web-readiness",
+44,,,,,"Feature Request",New,"Complex functionality",Web,"Down-sized optimal service-desk",Low,"syndicate dot-com synergies",00Qm0000001B1N6EAK
+45,,,003m0000003A5XSAA0,001m0000004BhopAAC,"Feature Request",Escalated,"New problem",Web,"Seamless eco-centric attitude",Medium,"transform next-generation action-items",
+46,,,,,Question,Closed,"Existing problem",Web,"Right-sized client-driven software",Low,"transform innovative solutions",00Qm0000001B1NlEAK
+47,,,,,Problem,"On Hold","Complex functionality",Email,"Synergized well-modulated archive",High,"scale cutting-edge convergence",00Qm0000001B1NLEA0
+48,,,003m0000003A5XjAAK,001m0000004Bhp6AAC,"Feature Request",Escalated,"New problem",Email,"Upgradable executive synergy",Low,"reintermediate compelling applications",
+49,,,,,Problem,Escalated,"Instructions not clear",Phone,"Organized executive hub",Low,"grow back-end paradigms",00Qm0000001B1NOEA0
+50,,,003m0000003A5XIAA0,001m0000004BhofAAC,Question,New,"Existing problem",Web,"Advanced needs-based algorithm",High,"exploit dot-com convergence",
+51,,,,,Question,"On Hold","User didn't attend training",Phone,"Switchable mission-critical moratorium",Low,"reintermediate frictionless e-business",00Qm0000001B1NTEA0
+52,,,,,Problem,Closed,"User didn't attend training",Email,"Balanced disintermediate capability",Low,"grow plug-and-play eyeballs",00Qm0000001B1NXEA0
+53,,,,,Question,New,"New problem",Email,"Realigned zero tolerance website",High,"architect web-enabled web services",00Qm0000001B1N7EAK
+54,,,003m0000003A5XsAAK,001m0000004BhpFAAS,Question,"On Hold","User didn't attend training",Web,"Stand-alone demand-driven function",High,"target bleeding-edge solutions",
+55,,,003m0000003A5XmAAK,001m0000004Bhp9AAC,"Feature Request",New,"New problem",Phone,"Front-line global solution",Low,"benchmark granular infomediaries",
+56,,,003m0000003A5XoAAK,001m0000004BhpBAAS,Question,"On Hold","Existing problem",Email,"Intuitive national utilisation",Low,"grow intuitive functionalities",
+57,,,,,"Feature Request",New,"Instructions not clear",Email,"Future-proofed non-volatile hierarchy",Low,"reinvent visionary paradigms",00Qm0000001B1MwEAK
+58,,,003m0000003A5XtAAK,001m0000004BhpGAAS,"Feature Request",Closed,"Complex functionality",Email,"Programmable high-level complexity",Low,"harness magnetic applications",
+59,,,003m0000003A5XZAA0,001m0000004BhowAAC,"Feature Request",Escalated,"Instructions not clear",Phone,"Reduced full-range info-mediaries",High,"generate frictionless interfaces",
+60,,,,,Problem,Escalated,"User didn't attend training",Phone,"Synergistic mission-critical hierarchy",High,"visualize e-business bandwidth",00Qm0000001B1NiEAK
+61,,,,,Question,Escalated,"User didn't attend training",Email,"Automated scalable workforce",Low,"optimize integrated markets",00Qm0000001B1N0EAK
+62,,,,,Problem,Closed,"Instructions not clear",Web,"Virtual object-oriented solution",Medium,"maximize clicks-and-mortar convergence",00Qm0000001B1N1EAK
+63,,,,,"Feature Request",New,"Complex functionality",Email,"Operative well-modulated toolset",Medium,"innovate 24/365 deliverables",00Qm0000001B1NFEA0
+64,,,003m0000003A5XUAA0,001m0000004BhorAAC,Problem,Closed,"New problem",Web,"De-engineered directional initiative",Low,"synthesize frictionless convergence",
+65,,,,,Problem,Escalated,"New problem",Email,"Secured intangible neural-net",Medium,"drive killer content",00Qm0000001B1NGEA0
+66,,,003m0000003A5XNAA0,001m0000004BhokAAC,Question,"On Hold","Existing problem",Email,"Grass-roots discrete website",High,"aggregate transparent markets",
+67,,,003m0000003A5X6AAK,001m0000004BhnkAAC,Problem,Closed,"Complex functionality",Email,"Optional grid-enabled approach",High,"recontextualize revolutionary methodologies",
+68,,,,,Question,Closed,"User didn't attend training",Phone,"Ameliorated actuating Graphic Interface",High,"architect real-time communities",00Qm0000001B1MyEAK
+69,,,003m0000003A5XDAA0,001m0000004BhoaAAC,Problem,Closed,"User didn't attend training",Email,"Quality-focused optimizing solution",Low,"utilize integrated schemas",
+70,,,,,"Feature Request",Escalated,"New problem",Phone,"Enhanced homogeneous adapter",Low,"recontextualize impactful applications",00Qm0000001B1NWEA0
+71,,,003m0000003A5XBAA0,001m0000004BhoYAAS,Problem,"On Hold","Complex functionality",Web,"Function-based fresh-thinking monitoring",Medium,"utilize frictionless functionalities",
+72,,,003m0000003A5XkAAK,001m0000004Bhp7AAC,"Feature Request",Closed,"Instructions not clear",Phone,"Future-proofed disintermediate support",High,"reinvent dot-com content",
+73,,,003m0000003A5X5AAK,001m0000004BhnjAAC,Question,Closed,"Existing problem",Phone,"Sharable full-range knowledge user",High,"evolve front-end e-markets",
+74,,,003m0000003A5X4AAK,001m0000004BhniAAC,"Feature Request","On Hold","User didn't attend training",Email,"Horizontal reciprocal solution",High,"incubate collaborative e-services",
+75,,,,,Problem,Escalated,"Instructions not clear",Phone,"Configurable hybrid pricing structure",High,"cultivate bricks-and-clicks relationships",00Qm0000001B1NJEA0
+76,,,,,Question,New,"User didn't attend training",Email,"Team-oriented empowering function",High,"disintermediate innovative e-markets",00Qm0000001B1NREA0
+77,,,003m0000003A5XZAA0,001m0000004BhowAAC,Problem,Closed,"New problem",Web,"Secured multimedia instruction set",Medium,"exploit B2C portals",
+78,,,003m0000003A5XZAA0,001m0000004BhowAAC,Question,Escalated,"Instructions not clear",Web,"Synergistic demand-driven emulation",Medium,"engineer transparent functionalities",
+79,,,,,Problem,"On Hold","New problem",Email,"Mandatory client-driven definition",High,"architect mission-critical deliverables",00Qm0000001B1N9EAK
+80,,,003m0000003A5XhAAK,001m0000004Bhp4AAC,Question,Escalated,"Instructions not clear",Web,"Compatible maximized workforce",High,"deliver sexy niches",
+81,,,003m0000003A5XpAAK,001m0000004BhpCAAS,Problem,"On Hold","Instructions not clear",Email,"Centralized holistic productivity",Medium,"transform vertical systems",
+82,,,,,Problem,Closed,"Complex functionality",Phone,"User-friendly uniform model",High,"synthesize strategic e-business",00Qm0000001B1NiEAK
+83,,,003m0000003A5XLAA0,001m0000004BhoiAAC,Problem,"On Hold","Instructions not clear",Web,"Devolved static throughput",High,"repurpose dynamic functionalities",
+84,,,003m0000003A5XrAAK,001m0000004BhpEAAS,Problem,New,"New problem",Email,"Ergonomic cohesive firmware",High,"incentivize robust solutions",
+85,,,,,Question,New,"Complex functionality",Phone,"Persistent secondary orchestration",Low,"incubate collaborative methodologies",00Qm0000001B1NLEA0
+86,,,003m0000003A5XUAA0,001m0000004BhorAAC,"Feature Request",Closed,"New problem",Web,"Visionary tertiary customer loyalty",High,"target transparent infrastructures",
+87,,,,,Question,Closed,"New problem",Email,"Implemented responsive implementation",Medium,"matrix end-to-end systems",00Qm0000001B1NiEAK
+88,,,003m0000003A5XLAA0,001m0000004BhoiAAC,"Feature Request",Escalated,"User didn't attend training",Email,"Total static complexity",Medium,"extend back-end experiences",
+89,,,003m0000003A5XFAA0,001m0000004BhocAAC,Problem,Closed,"User didn't attend training",Email,"Future-proofed well-modulated throughput",Medium,"enable strategic users",
+90,,,,,Question,"On Hold","Complex functionality",Web,"Fundamental dynamic hierarchy",Low,"cultivate strategic content",00Qm0000001B1NLEA0
+91,,,,,Problem,"On Hold","New problem",Web,"Programmable stable moderator",Medium,"benchmark global schemas",00Qm0000001B1NUEA0
+92,,,,,Problem,Escalated,"Instructions not clear",Email,"Enhanced neutral info-mediaries",Low,"synthesize out-of-the-box synergies",00Qm0000001B1NSEA0
+93,,,003m0000003A5XMAA0,001m0000004BhojAAC,"Feature Request",Escalated,"User didn't attend training",Email,"Stand-alone value-added middleware",Low,"deliver front-end channels",
+94,,,003m0000003A5XnAAK,001m0000004BhpAAAS,Problem,New,"Existing problem",Email,"Customer-focused incremental project",High,"scale front-end portals",
+95,,,003m0000003A5X7AAK,001m0000004BhnlAAC,Problem,"On Hold","User didn't attend training",Email,"User-friendly 3rd generation open system",Low,"harness strategic partnerships",
+96,,,,,Problem,Closed,"Instructions not clear",Phone,"Object-based leading edge architecture",High,"benchmark scalable synergies",00Qm0000001B1NIEA0
+97,,,003m0000003A5XaAAK,001m0000004BhoxAAC,Problem,Closed,"New problem",Email,"Configurable multimedia encryption",Low,"facilitate enterprise portals",
+98,,,,,Problem,Escalated,"Instructions not clear",Email,"Intuitive multi-state secured line",Low,"matrix back-end models",00Qm0000001B1NlEAK
+99,,,,,Question,New,"New problem",Phone,"Ergonomic value-added website",Low,"exploit frictionless models",00Qm0000001B1NOEA0
+100,,,003m0000003A5XKAA0,001m0000004BhohAAC,Problem,Escalated,"Instructions not clear",Web,"Multi-tiered executive portal",High,"reintermediate sexy architectures",
