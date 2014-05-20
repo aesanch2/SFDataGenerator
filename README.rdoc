@@ -1,33 +1,42 @@
 == README
 
 SFDataGenerator
+
 Anthony Sanchez
+
 aesanch2@asu.edu
 
 This tool creates dummy data for contacts, leads, and cases objects in the
-ASU Salesforce Enterprise. 
+ASU Salesforce Enterprise.
 
 * Ruby version - 2.1.1
 
 * System dependencies - RVM, sqlite3, Rails 4.1.1
 
-* Configuration - to create new tables in the database run:
+* Database creation - <tt>rake db:create</tt>
 
-rails generate model new [table] [fields]:[type] [options]
+* Database configuration - to configure new tables in the database run:
 
-* Database creation - rake db:create
+<tt>rails generate model new [table] [field]:[type] [options]</tt>
 
-* Database initialization - rake db:migrate
+<tt>rake db:migrate</tt>
 
-* Populator - populator.rake is used to populate the db. Three functions exist:
+If you want to update tables, you can use standard sqlite3 commands or
+delete the <tt>db/development.sqlite3</tt> and <tt>db/test.sqlite3</tt> databases. Recreate the db using
 
-rake db:fake_contacts: Enter the number of contacts you want to create. They
-will be stored in the "contacts" table in  <tt>db/development.sqlite3</tt>.
+<tt>rake db:create</tt>
 
-rake db:fake_leads: Enter the number of leads you want to create. They will be
-stored in the "leads" table in <tt>db/development.sqlite3</tt>.
+<tt>rake db:migrate</tt>
 
-rake db:fake_cases: You need to retrieve the salesforce ids of 25 contacts,
-25 accounts, and 25 leads. These need to be in a single line separated by a
-space. Then enter the number of cases you wish to create. They will be stored
-in the "cases" table in <tt>db/development.sqlite3<tt>.
+* Populator - <tt>lib/tasks/populator.rake</tt> is used to populate the db. Three functions exist:
+
+<tt>rake db:fake_contacts</tt>: Enter the number of contacts you want to create. They
+will be stored in the <tt>contacts</tt> table in  <tt>db/development.sqlite3</tt>.
+
+<tt>rake db:fake_leads</tt>: Enter the number of leads you want to create. They will be
+stored in the <tt>leads</tt> table in <tt>db/development.sqlite3</tt>.
+
+<tt>rake db:fake_cases</tt>: You need to retrieve the salesforce ids of 25 contacts,
+25 accounts, and 25 leads. Each of these need to be in a single line separated by a
+space. Examples that you can use exist in <tt>data/</tt>. Then enter the number of cases you wish to create. They will be stored
+in the <tt>cases</tt> table in <tt>db/development.sqlite3</tt>.
